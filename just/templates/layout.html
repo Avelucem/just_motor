@@ -1,0 +1,27 @@
+<html lang="ru">
+  <head>
+    <title>{% block title %}Just Motor{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type='text/javascript' src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type='text/javascript' src="{{ url_for('static', filename='js/bootstrap-table.min.js') }}"></script>
+    <script
+    src="{{ url_for('static', filename='js/jquery-2.2.4.min.js') }}"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <style type='text/css'>
+    .row-index {
+      width: 50px;
+      display: inline-block;
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="container-fluid">{% block content %}{% endblock %}</div>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" property="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/bootstrap-table.min.css') }}" rel="stylesheet" type="text/css">
+  </body>
+</html>

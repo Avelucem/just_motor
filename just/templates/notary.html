@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<!doctype html>
+<h1  align = 'center'>Формирование актов выполненных работ и счетов</h1><br/>
+<form class="form-horizontal" method="post" enctype=multipart/form-data>
+    <div align = 'center'>
+        <p class="help-block">Выберете файл paid.xls</p>
+        <input class="btn btn-danger" type="file" name= "file"><br/>
+        <p><button class="btn btn-success btn-lg" type="submit">Сформировать</button>
+        <p><a href="notary_examples/paid.xls" class="btn btn-primary"> Скачать файл-форму paid.xls</a>
+    </div>
+</form>
+{% endblock %}

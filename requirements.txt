@@ -1,0 +1,7 @@
+xlrd == 1.1.0
+Flask == 0.12.2
+pandas == 0.20.3
+python-docx == 0.8.6
+docxtpl == 0.4.6
+requests == 2.18.4
+lxml == 4.0.0

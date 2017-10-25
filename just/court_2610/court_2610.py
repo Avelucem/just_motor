@@ -5,36 +5,31 @@ from bs4 import BeautifulSoup
 import requests
 from requests import Request, Session
 
-
 s = requests.Session()
 f_read = open(os.path.abspath('just/court_2610/text.txt'), 'r', encoding = 'utf-8')
 last_number = f_read.read().split('\n')[-2].split(';')[0].split('/')[-3]
 url_logs = "http://court.gov.ua/logs.php"
 
 class Downloader(threading.Thread):
-    """Потоковый загрузчик файлов"""
-
     def __init__(self, queue):
-        """Инициализация потока"""
         threading.Thread.__init__(self)
         self.queue = queue
-
     def run(self):
-        """Запуск потока"""
         while True:
             # Получаем url из очереди
             url = self.queue.get()
-
             # Скачиваем файл
             self.court_2610(url)
-
             # Отправляем сигнал о том, что задача завершена
             self.queue.task_done()
-
     def court_2610(self, url):
         inspector = s.get(url)
         inspector_soup = BeautifulSoup(inspector.content, 'lxml')
-        DID = inspector_soup.find(id='did').next_element.split('_')[0]
+        try:
+            DID = inspector_soup.find(id='did').next_element.split('_')[0]
+        except (AttributeError, NameError):
+            DID = 0
+            print('FUCK' + url)
         if DID != u'0':
             f = open(os.path.abspath('just/court_2610/text.txt'), 'a+', encoding = 'utf-8')
             headers = {
@@ -68,27 +63,20 @@ class Downloader(threading.Thread):
         print(url)
 
 def main(urls):
-    """
-    Запускаем программу
-    """
     queue = Queue()
-
     # Запускаем потом и очередь
-    for i in range(20):
+    for i in range(200):
         t = Downloader(queue)
         t.setDaemon(True)
         t.start()
-
     # Даем очереди нужные нам ссылки для скачивания
     for url in urls:
         queue.put(url)
-
     # Ждем завершения работы очереди
     queue.join()
 
 if __name__ == "__main__":
     urls = []
-    for links in list(range(int(last_number), int(last_number)+10000)):
+    for links in list(range(int(last_number)+1, int(last_number)+10000)):
         urls.append('http://court.gov.ua/log_documents/%s/2610/'% links)
-
     main(urls)

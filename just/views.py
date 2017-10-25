@@ -8,7 +8,7 @@ from flask import Flask, request, redirect, url_for, flash, send_from_directory,
 from werkzeug.utils import secure_filename
 import json
 
-from just.court_2610.nice_look import data, columns
+
 
 ALLOWED_EXTENSIONS = set(['xls'])
 def allowed_file(filename):
@@ -17,6 +17,7 @@ def allowed_file(filename):
 @app.route('/', methods=['GET', 'POST'])
 def index_page():
     return render_template('index_page.html')
+
 @app.route('/notary', methods=['GET', 'POST'])
 def upload_file_notary():
     if request.method == 'POST':
@@ -88,13 +89,13 @@ def download_exapmles_reclamation(filename):
 
 @app.route('/court_2610/', methods=['GET', 'POST'])
 def index():
+    from just.court_2610.nice_look import nice_look_data, columns
     return render_template("court_2610.html",
-      data=data,
+      data=nice_look_data(),
       columns=columns,
       title='Результаты автоматического распределения в Шевченковском районном суде города Киева')
 
 @app.route('/court_2610/rewind/', methods=['GET', 'POST'])
 def index_rewind():
-    from just.court_2610.court_2610 import court_2610
-    court_2610()
-    return render_template("court_2610.html")
+    import just.court_2610.court_2610
+    return render_template("court_2610_rewind.html")

@@ -67,7 +67,7 @@ class Downloader(threading.Thread):
 def main(urls):
     queue = Queue()
     # Запускаем потом и очередь
-    for i in range(500):
+    for i in range(300):
         t = Downloader(queue)
         t.setDaemon(True)
         t.start()

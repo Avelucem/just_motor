@@ -12,7 +12,7 @@ EXAMPLES_NOTARY = os.path.abspath('examples/notary_examples')
 EXAMPLES_RECLAMATION = os.path.abspath('examples/reclamation_examples')
 DOWNLOAD_NOTARY = os.path.abspath('downloads/notary_downloads')
 DOWNLOAD_RECLAMATION = os.path.abspath('downloads/reclamation_downloads')
-TEXT_ROOT =  os.path.abspath('just/court_2610')
+TEXT_ROOT =  os.path.abspath('uploads')
 app = Flask(__name__, static_folder='static')
 app.secret_key = 'super secret key'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER

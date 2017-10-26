@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex">
+  <title> Результаты автоматического распределения в Шевченковском районном суде города Киева</title>
+  <script
+  src="{{ url_for('static', filename='js/jquery-2.2.4.min.js') }}"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript"  src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-table.min.css') }}">
+  <script type='text/javascript' src="{{ url_for('static', filename='js/bootstrap-table.min.js') }}"></script>
+  <style type='text/css'>
+    .row-index {
+      width: 50px;
+      display: inline-block;
+    }
+  </style>
+
+  <script type='text/javascript'>
+    $(window).load(function(){
+      var data = {{data|tojson}};
+      var columns = {{columns|tojson}};
+
+      $(function() {
+        $('#table').bootstrapTable({
+          data: data,
+          columns: columns,
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container" style="padding: 10px; ">
+    <h1>{{title}}</h1>
+    <br/>
+    <div id="toolbar"></div>
+    <table
+      id="table"
+      data-toggle="true"
+      data-toolbar="#toolbar"
+      data-search="true"
+      data-show-columns="true"
+      data-pagination="true"
+      data-height="800">
+    </table>
+    <a class="btn btn-primary" href="/court_2606_rewind/" role="button"> Обновить данные</a>
+  </div>
+
+</body>
+</html>

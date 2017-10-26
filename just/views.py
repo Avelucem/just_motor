@@ -99,3 +99,9 @@ def index():
 def index_rewind():
     import just.court_2610.court_2610
     return render_template("court_2610_rewind.html")
+
+
+@app.route('text/<filename>', methods=['GET', 'POST'])
+def download_text(filename):
+    return send_from_directory(app.config['TEXT_ROOT'],
+                               filename)

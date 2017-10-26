@@ -6,7 +6,7 @@ import requests
 from requests import Request, Session
 
 s = requests.Session()
-f_read = open(os.path.abspath('just/court_2610/text.txt'), 'r', encoding = 'utf-8')
+f_read = open(os.path.abspath('uploads/text.txt'), 'r', encoding = 'utf-8')
 last_number = f_read.read().split('\n')[-2].split(';')[0].split('/')[-3]
 url_logs = "http://court.gov.ua/logs.php"
 
@@ -50,7 +50,7 @@ class Downloader(threading.Thread):
                 soup = BeautifulSoup(page.content, 'lxml')
                 try:
                     find_soup = soup.find('p').string.replace('\r',';').replace('I: ','').split('\n')
-                    f = open(os.path.abspath('just/court_2610/text.txt'), 'a+', encoding = 'utf-8')
+                    f = open(os.path.abspath('uploads/text.txt'), 'a+', encoding = 'utf-8')
                     f.write(url)
                     f.write(';')
                     for index in find_soup[1:5]:

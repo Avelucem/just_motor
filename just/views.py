@@ -101,7 +101,7 @@ def index_rewind():
     return render_template("court_2610_rewind.html")
 
 
-@app.route('text/<filename>', methods=['GET', 'POST'])
+@app.route('/text/<filename>', methods=['GET', 'POST'])
 def download_text(filename):
     return send_from_directory(app.config['TEXT_ROOT'],
                                filename)

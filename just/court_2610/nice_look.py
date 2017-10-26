@@ -9,7 +9,7 @@ def nice_look_data():
         href_data = nice_data[0]
         date_data = nice_data[1][-22:-3]
         court_proceeding_data =  nice_data[2].split(':')[1][1:]
-        case_data = nice_data[3].split(':')[1][1:]
+        case_data = nice_data[3].split(':')[1]
         info_data = nice_data[4]
         nice_dict = {'href_data' : href_data,
             'date_data' : date_data,

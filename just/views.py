@@ -88,7 +88,7 @@ def download_exapmles_reclamation(filename):
                                filename)
 
 @app.route('/court_2610/', methods=['GET', 'POST'])
-def index():
+def index_2610():
     from just.court_2610.nice_look import nice_look_data, columns
     return render_template("court_2610.html",
       data=nice_look_data(),
@@ -96,7 +96,7 @@ def index():
       title='Результаты автоматического распределения в Шевченковском районном суде города Киева')
 
 @app.route('/court_2606/', methods=['GET', 'POST'])
-def index():
+def index_2606():
     from just.court_2606.nice_look import nice_look_data, columns
     return render_template("court_2606.html",
       data=nice_look_data(),
@@ -104,7 +104,7 @@ def index():
       title='Результаты автоматического распределения в Печерском районном суде города Киева')
 
 @app.route('/court_2606/rewind/', methods=['GET', 'POST'])
-def index_rewind():
+def index_rewind_2606():
     import just.court_2606.court_2606
     return render_template("court_2606_rewind.html")
 

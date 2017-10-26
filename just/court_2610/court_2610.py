@@ -59,12 +59,6 @@ class Downloader(threading.Thread):
                     f.close()
                     print('niceeeeeeeeeeeeeeeeeee%s'% url)
                 except:
-                    find_soup = '000000000000000000'
-                    f = open(os.path.abspath('just/court_2610/text.txt'), 'a+', encoding = 'utf-8')
-                    f.write(url)
-                    f.write(';')
-                    f.write('\n')
-                    f.close()
                     print('_________________________________________________________%s '% url)
         except (AttributeError, NameError):
             print('FUCK' + url)

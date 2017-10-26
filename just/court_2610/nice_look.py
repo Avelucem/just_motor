@@ -1,7 +1,7 @@
 import os
 import json
 def nice_look_data():
-    ugly_file = open(os.path.abspath('just/court_2610/text.txt'), 'r', encoding = 'utf-8')
+    ugly_file = open(os.path.abspath('uploads/text.txt'), 'r', encoding = 'utf-8')
     ugly_file_list = ugly_file.read().split('\n')
     data = []
     for i in range(len(ugly_file_list)-1):

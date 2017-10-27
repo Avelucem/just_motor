@@ -1,22 +1,23 @@
 from just import app
-from io import StringIO
+
 import os
-from functools import wraps
+
 import zipfile
 
 from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
-import json
+
+ALLOWED_EXTENSIONS = set(['xls', 'txt'])
 
 
-
-ALLOWED_EXTENSIONS = set(['xls'])
 def allowed_file(filename):
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 @app.route('/', methods=['GET', 'POST'])
 def index_page():
     return render_template('index_page.html')
+
 
 @app.route('/notary', methods=['GET', 'POST'])
 def upload_file_notary():
@@ -37,6 +38,7 @@ def upload_file_notary():
             return redirect(url_for('download_notary_file', filename='notary_app.zip'))
     return render_template('notary.html')
 
+
 @app.route('/reclamation', methods=['GET', 'POST'])
 def upload_file_reclamation():
     if request.method == 'POST':
@@ -56,66 +58,50 @@ def upload_file_reclamation():
             return redirect(url_for('download_reclamation_file', filename='reclamation_app.zip'))
     return render_template('reclamation.html')
 
+
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
 
+
+@app.route('/examples/<filename>', methods=['GET', 'POST'])
+def download_exapmles(filename):
+    return send_from_directory(app.config['EXAMPLES'],
+                               filename)
+
+
 @app.route('/download_notary_file/<filename>')
 def download_notary_file(filename):
-    zipfile.ZipFile(os.path.abspath('downloads/notary_downloads/notary_app.zip'), mode = 'w')
+    zipfile.ZipFile(os.path.abspath('downloads/notary_downloads/notary_app.zip'), mode='w')
     from just.notary.notary_app import notary_app
     notary_app()
     return send_from_directory(app.config['DOWNLOAD_NOTARY'],
                                filename)
 
+
 @app.route('/download_reclamation_file/<filename>')
 def download_reclamation_file(filename):
-    zipfile.ZipFile(os.path.abspath('downloads/reclamation_downloads/reclamation_app.zip'), mode = 'w')
+    zipfile.ZipFile(os.path.abspath('downloads/reclamation_downloads/reclamation_app.zip'), mode='w')
     from just.reclamation.reclamation_app import reclamation_app
     reclamation_app()
     return send_from_directory(app.config['DOWNLOAD_RECLAMATION'],
                                filename)
 
-@app.route('/notary_examples/<filename>', methods=['GET', 'POST'])
-def download_exapmles_notary(filename):
-    return send_from_directory(app.config['EXAMPLES_NOTARY'],
-                               filename)
-
-@app.route('/reclamation_examples/<filename>', methods=['GET', 'POST'])
-def download_exapmles_reclamation(filename):
-    return send_from_directory(app.config['EXAMPLES_RECLAMATION'],
-                               filename)
 
 @app.route('/court_2610/', methods=['GET', 'POST'])
 def index_2610():
     from just.court_2610.nice_look import nice_look_data, columns
     return render_template("court_2610.html",
-      data=nice_look_data(),
-      columns=columns,
-      title='Результаты автоматического распределения в Шевченковском районном суде города Киева')
+                           data=nice_look_data(),
+                           columns=columns,
+                           title='Результаты автоматического распределения в Шевченковском районном суде города Киева')
+
 
 @app.route('/court_2606/', methods=['GET', 'POST'])
 def index_2606():
     from just.court_2606.nice_look import nice_look_data, columns
     return render_template("court_2606.html",
-      data=nice_look_data(),
-      columns=columns,
-      title='Результаты автоматического распределения в Печерском районном суде города Киева')
-
-@app.route('/court_2606/rewind/', methods=['GET', 'POST'])
-def index_rewind_2606():
-    import just.court_2606.court_2606
-    return render_template("court_2606_rewind.html")
-
-
-@app.route('/court_2610/rewind/', methods=['GET', 'POST'])
-def index_rewind():
-    import just.court_2610.court_2610
-    return render_template("court_2610_rewind.html")
-
-
-@app.route('/text/<filename>', methods=['GET', 'POST'])
-def download_text(filename):
-    return send_from_directory(app.config['TEXT_ROOT'],
-                               filename)
+                           data=nice_look_data(),
+                           columns=columns,
+                           title='Результаты автоматического распределения в Печерском районном суде города Киева')

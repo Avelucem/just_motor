@@ -1,10 +1,11 @@
 import zipfile
-import os
+
 from docxtpl import DocxTemplate,  R
 from just.reclamation.colect import *
 
 reclamation_len = len(number_place)
 def reclamation_app():
+    global deficit_data_place
     for i in list(range(reclamation_len)):
         zf = zipfile.ZipFile(os.path.abspath('downloads/reclamation_downloads/reclamation_app.zip'), mode = 'a')
         x = 0
@@ -55,4 +56,5 @@ def reclamation_app():
         doc.render(context)
         doc.save(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx" % number_place[i]))
         zf.write(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx" % number_place[i]), arcname= 'Рекламация № %s.docx' % number_place[i])
+        os.remove(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx") % number_place[i])
         zf.close()

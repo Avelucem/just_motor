@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-data_dir = os.path.abspath('uploads/paid.xls')
+data_dir = os.path.abspath('uploads/notary_examples.xls')
 
 data_PARC = pd.read_excel(data_dir, 'list', skiprows=0)
 data = data_PARC.to_dict(orient='list')

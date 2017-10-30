@@ -6,8 +6,6 @@ import zipfile
 
 from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
-from just.court_2610.court_2610 import *
-
 
 ALLOWED_EXTENSIONS = set(['xls', 'txt'])
 

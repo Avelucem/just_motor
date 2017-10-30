@@ -6,6 +6,8 @@ import zipfile
 
 from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
+from just.court_2606.court_2606 import *
+from just.court_2610.court_2610 import *
 
 ALLOWED_EXTENSIONS = set(['xls', 'txt'])
 
@@ -109,7 +111,6 @@ def index_2606():
 
 @app.route('/court_2610/rewind', methods=['GET', 'POST'])
 def rewind_2610():
-    from just.court_2610.court_2610 import *
     if __name__ == "__main__":
         urls = []
         for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):
@@ -119,7 +120,6 @@ def rewind_2610():
 
 @app.route('/court_2606/rewind', methods=['GET', 'POST'])
 def rewind_2606():
-    from just.court_2606.court_2606 import *
     if __name__ == "__main__":
         urls = []
         for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):

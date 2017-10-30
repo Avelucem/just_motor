@@ -6,6 +6,8 @@ import zipfile
 
 from flask import Flask, request, redirect, url_for, flash, send_from_directory, render_template
 from werkzeug.utils import secure_filename
+from just.court_2610.court_2610 import *
+
 
 ALLOWED_EXTENSIONS = set(['xls', 'txt'])
 
@@ -105,3 +107,22 @@ def index_2606():
                            data=nice_look_data(),
                            columns=columns,
                            title='Результаты автоматического распределения в Печерском районном суде города Киева')
+
+
+@app.route('/court_2610/rewind', methods=['GET', 'POST'])
+def rewind_2610():
+    if __name__ == "__main__":
+        urls = []
+        for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):
+            urls.append('http://court.gov.ua/log_documents/%s/2610/' % links)
+        main(urls)
+    return render_template('index_page.html')
+
+@app.route('/court_2606/rewind', methods=['GET', 'POST'])
+def rewind_2606():
+    if __name__ == "__main__":
+        urls = []
+        for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):
+            urls.append('http://court.gov.ua/log_documents/%s/2606/' % links)
+        main(urls)
+    return render_template('index_page.html')

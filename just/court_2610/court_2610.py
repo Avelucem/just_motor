@@ -1,4 +1,4 @@
-import os
+﻿import os
 import threading
 from queue import Queue
 from bs4 import BeautifulSoup
@@ -26,8 +26,9 @@ class Downloader(threading.Thread):
         inspector = s.get(url)
         inspector_soup = BeautifulSoup(inspector.content, 'lxml')
         try:
-            DID = inspector_soup.find(id='did').next_element.split('_')[0]
+            DID = inspector_soup.find(id='did').next_element
             if DID != u'0':
+                DID = DID.split('_')[0]
                 headers = {
                 "Host" : "court.gov.ua",
                 "Connection" : "keep-alive",
@@ -57,17 +58,16 @@ class Downloader(threading.Thread):
                         f.write(index)
                     f.write('\n')
                     f.close()
-                    print('niceeeeeeeeeeeeeeeeeee%s'% url)
+                    print('niceeeeeeeeeeeeeeeeeee %s'% url)
                 except:
                     print('_________________________________________________________%s '% url)
-        except (AttributeError, NameError):
+        except:
             print('FUCK' + url)
-        print(url)
 
 def main(urls):
     queue = Queue()
     # Запускаем потом и очередь
-    for i in range(200):
+    for i in range(40):
         t = Downloader(queue)
         t.setDaemon(True)
         t.start()

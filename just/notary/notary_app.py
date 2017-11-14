@@ -27,8 +27,8 @@ def notary_app():
                    'price_place': price_place[i],
                    'name_place': motor_place}
         doc.render(context)
-        doc.save(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
-        zf.write(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]),
+        doc.save(os.path.abspath("Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
+        zf.write(os.path.abspath("Cчет №%s %s.docx") % (number_place[i], notary_name[i]),
                  arcname="Cчет №%s %s.docx" % (number_place[i], notary_name[i]))
-        os.remove(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
+        os.remove(os.path.abspath("Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
         zf.close()

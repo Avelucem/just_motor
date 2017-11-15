@@ -78,6 +78,6 @@ def main(urls):
 
 if __name__ == "__main__":
     urls = []
-    for links in list(range(11142134, 11142134-20,-1)):
+    for links in list(range(11142119, 11142119-1000000,-1)):
         urls.append('http://court.gov.ua/log_documents/%s/2601/'% links)
     main(urls)

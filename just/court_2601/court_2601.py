@@ -7,6 +7,7 @@ from requests import Request, Session
 
 s = requests.Session()
 f_read = open(os.path.abspath('uploads/text_2601.txt'), 'r', encoding = 'utf-8')
+last_number = f_read.read().split('\n')[-2].split(';')[0].split('/')[-3]
 url_logs = "http://court.gov.ua/logs.php"
 
 class Downloader(threading.Thread):
@@ -78,6 +79,6 @@ def main(urls):
 
 if __name__ == "__main__":
     urls = []
-    for links in list(range(11142119, 11142119-1000000,-1)):
+    for links in list(range(int(last_number), int(last_number)-1000000,-1)):
         urls.append('http://court.gov.ua/log_documents/%s/2601/'% links)
     main(urls)

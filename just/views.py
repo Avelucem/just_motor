@@ -108,6 +108,15 @@ def index_2606():
                            columns=columns,
                            title='Результаты автоматического распределения в Печерском районном суде города Киева')
 
+@app.route('/court_2601/', methods=['GET', 'POST'])
+def index_2601():
+    from just.court_2601.nice_look import nice_look_data, columns
+    return render_template("court_2601.html",
+                           data=nice_look_data(),
+                           columns=columns,
+                           title='Результаты автоматического распределения в Голосеевском районном суде города Киева')
+
+
 
 @app.route('/court_2610/rewind', methods=['GET', 'POST'])
 def rewind_2610():

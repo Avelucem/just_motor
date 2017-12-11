@@ -116,6 +116,7 @@ def index_2601():
                            columns=columns,
                            title='Результаты автоматического распределения в Голосеевском районном суде города Киева')
 
+<<<<<<< HEAD
 @app.route('/court_0717/', methods=['GET', 'POST'])
 def index_0717():
     from just.court_0717.nice_look import nice_look_data, columns
@@ -123,5 +124,8 @@ def index_0717():
                            data=nice_look_data(),
                            columns=columns,
                            title='Результаты автоматического распределения в Ужгородском межрайонном суде в Закарпатской области')
+=======
+
+>>>>>>> 4ace955a46d148ebb627465a6a5d2d5e95be7b65
 
 

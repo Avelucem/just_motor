@@ -108,21 +108,20 @@ def index_2606():
                            columns=columns,
                            title='Результаты автоматического распределения в Печерском районном суде города Киева')
 
+@app.route('/court_2601/', methods=['GET', 'POST'])
+def index_2601():
+    from just.court_2601.nice_look import nice_look_data, columns
+    return render_template("court_2601.html",
+                           data=nice_look_data(),
+                           columns=columns,
+                           title='Результаты автоматического распределения в Голосеевском районном суде города Киева')
 
-@app.route('/court_2610/rewind', methods=['GET', 'POST'])
-def rewind_2610():
-    if __name__ == "__main__":
-        urls = []
-        for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):
-            urls.append('http://court.gov.ua/log_documents/%s/2610/' % links)
-        main(urls)
-    return render_template('index_page.html')
+@app.route('/court_0717/', methods=['GET', 'POST'])
+def index_0717():
+    from just.court_0717.nice_look import nice_look_data, columns
+    return render_template("court_0717.html",
+                           data=nice_look_data(),
+                           columns=columns,
+                           title='Результаты автоматического распределения в Ужгородском межрайонном суде в Закарпатской области')
 
-@app.route('/court_2606/rewind', methods=['GET', 'POST'])
-def rewind_2606():
-    if __name__ == "__main__":
-        urls = []
-        for links in list(range(int(last_number) + 1, int(last_number) + 1000000)):
-            urls.append('http://court.gov.ua/log_documents/%s/2606/' % links)
-        main(urls)
-    return render_template('index_page.html')
+

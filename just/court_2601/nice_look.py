@@ -1,21 +1,23 @@
 import os
 import json
+
+
 def nice_look_data():
-    ugly_file = open(os.path.abspath('uploads/text_2606.txt'), 'r', encoding='utf-8')
+    ugly_file = open(os.path.abspath('uploads/text_2601.txt'), 'r', encoding='utf-8')
     ugly_file_list = ugly_file.read().split('\n')
     data = []
     for i in range(len(ugly_file_list)-1):
         nice_data = ugly_file_list[i].split(';')
         href_data = nice_data[0]
-        date_data = nice_data[1][-24:-4]
-        court_proceeding_data = '"' + nice_data[2].split(':')[1]
-        case_data = '"' + nice_data[3].split(':')[1]
+        date_data = nice_data[1].split('  ')[1]
+        court_proceeding_data = nice_data[2].split(':')[1]
+        case_data = nice_data[3].split(':')[1]
         info_data = nice_data[4]
-        nice_dict = {'href_data': href_data,
-            'date_data': date_data,
-            'court_proceeding_data': court_proceeding_data,
-            'case_data': case_data,
-            'info_data': info_data,}
+        nice_dict = {'href_data' : href_data,
+            'date_data' : date_data,
+            'court_proceeding_data' : court_proceeding_data,
+            'case_data' : case_data,
+            'info_data' : info_data,}
         data.append(nice_dict)
     return data
 

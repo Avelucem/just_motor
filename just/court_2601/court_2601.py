@@ -1,4 +1,4 @@
-import os
+﻿import os
 import threading
 from queue import Queue
 from bs4 import BeautifulSoup
@@ -6,7 +6,7 @@ import requests
 from requests import Request, Session
 
 s = requests.Session()
-f_read = open(os.path.abspath('uploads/text_0717.txt'), 'r', encoding = 'utf-8')
+f_read = open(os.path.abspath('uploads/text_2601.txt'), 'r', encoding = 'utf-8')
 last_number = f_read.read().split('\n')[-2].split(';')[0].split('/')[-3]
 url_logs = "http://court.gov.ua/logs.php"
 
@@ -19,10 +19,10 @@ class Downloader(threading.Thread):
             # Получаем url из очереди
             url = self.queue.get()
             # Скачиваем файл
-            self.court_0717(url)
+            self.court_2601(url)
             # Отправляем сигнал о том, что задача завершена
             self.queue.task_done()
-    def court_0717(self, url):
+    def court_2601(self, url):
         inspector = s.get(url)
         inspector_soup = BeautifulSoup(inspector.content, 'lxml')
         try:
@@ -44,14 +44,14 @@ class Downloader(threading.Thread):
                 "Cookie" : "PHPSESSID=erl2dvg4g4jiksova3bqtfoao6"}
                 data = {"doc_ver" : "54_2",
                 "did" : DID,
-                "ddid" : "0717"}
+                "ddid" : "2601"}
                 req = Request('POST', url_logs, data=data, headers=headers)
                 prepped = req.prepare()
                 page = s.send(prepped)
                 soup = BeautifulSoup(page.content, 'lxml')
                 try:
                     find_soup = soup.find('p').string.replace('\r',';').replace('I: ','').split('\n')
-                    f = open(os.path.abspath('uploads/text_0717.txt'), 'a+', encoding = 'utf-8')
+                    f = open(os.path.abspath('uploads/text_2601.txt'), 'a+', encoding = 'utf-8')
                     f.write(url)
                     f.write(';')
                     for index in find_soup[1:5]:
@@ -80,5 +80,5 @@ def main(urls):
 if __name__ == "__main__":
     urls = []
     for links in list(range(int(last_number)+1, int(last_number)+1000000)):
-        urls.append('http://court.gov.ua/log_documents/%s/0717/'% links)
+        urls.append('http://court.gov.ua/log_documents/%s/2601/'% links)
     main(urls)

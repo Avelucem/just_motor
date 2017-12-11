@@ -29,10 +29,10 @@ def reclamation_app():
         for data in production_data_list:
             production_data += data
 
-        if made_name_place[i] == '-' :
+        if made_name_place[i] == '-':
             made_name_place[i] = name_place[i]
 
-        if made_address_place[i] == '-' :
+        if made_address_place[i] == '-':
             made_address_place[i] = address_place[i]
 
         if deficit_data[i] != 0:
@@ -54,7 +54,7 @@ def reclamation_app():
             'add_data' : R(add_data)}
 
         doc.render(context)
-        doc.save(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx" % number_place[i]))
-        zf.write(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx" % number_place[i]), arcname= 'Рекламация № %s.docx' % number_place[i])
-        os.remove(os.path.abspath("generated/reclamation_generated/Рекламация № %s.docx") % number_place[i])
+        doc.save(os.path.abspath("generated/Рекламация № %s.docx" % number_place[i]))
+        zf.write(os.path.abspath("generated/Рекламация № %s.docx" % number_place[i]), arcname= 'Рекламация № %s.docx' % number_place[i])
+        os.remove(os.path.abspath("generated/Рекламация № %s.docx") % number_place[i])
         zf.close()

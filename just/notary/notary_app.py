@@ -5,7 +5,6 @@ from just.notary.colect import *
 
 notary_len = len(number_place)
 
-
 def notary_app():
     for i in list(range(notary_len)):
         zf = zipfile.ZipFile(os.path.abspath('downloads/notary_downloads/notary_app.zip'), mode='a')
@@ -27,8 +26,8 @@ def notary_app():
                    'price_place': price_place[i],
                    'name_place': motor_place}
         doc.render(context)
-        doc.save(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
-        zf.write(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]),
+        doc.save(os.path.abspath("generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
+        zf.write(os.path.abspath("generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]),
                  arcname="Cчет №%s %s.docx" % (number_place[i], notary_name[i]))
-        os.remove(os.path.abspath("generated/notary_generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
+        os.remove(os.path.abspath("generated/Cчет №%s %s.docx") % (number_place[i], notary_name[i]))
         zf.close()

@@ -9,15 +9,15 @@ def nice_look_data():
     for i in range(len(ugly_file_list)-1):
         nice_data = ugly_file_list[i].split(';')
         href_data = nice_data[0]
-<<<<<<< HEAD
+
         date_data = nice_data[1].split('  ')[1]
         court_proceeding_data = nice_data[2].split(':')[1]
         case_data = nice_data[3].split(':')[1]
-=======
+
         date_data = nice_data[1][-24:-4]
         court_proceeding_data = '"' + nice_data[2].split(':')[1]
         case_data = '"' + nice_data[3].split(':')[1]
->>>>>>> 4ace955a46d148ebb627465a6a5d2d5e95be7b65
+
         info_data = nice_data[4]
         nice_dict = {'href_data' : href_data,
             'date_data' : date_data,

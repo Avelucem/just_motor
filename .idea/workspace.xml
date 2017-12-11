@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="048dd553-7d3b-4847-b885-e64268f63458" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/just/court_2601/court_2601.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/just/court_2601/nice_look.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/just/dover/poa.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploads/text_0717.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/downloads/notary_downloads/notary_app.zip" afterPath="$PROJECT_DIR$/downloads/notary_downloads/notary_app.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/notary_examples.xls" afterPath="$PROJECT_DIR$/uploads/notary_examples.xls" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_0717/court_0717.py" afterPath="$PROJECT_DIR$/just/court_0717/court_0717.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_0717/nice_look.py" afterPath="$PROJECT_DIR$/just/court_0717/nice_look.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_2606/nice_look.py" afterPath="$PROJECT_DIR$/just/court_2606/nice_look.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_2610/nice_look.py" afterPath="$PROJECT_DIR$/just/court_2610/nice_look.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_2601/court_2601.py" afterPath="$PROJECT_DIR$/just/court_2601/court_2601.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/court_2601/nice_look.py" afterPath="$PROJECT_DIR$/just/court_2601/nice_look.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/notary/notary_app.py" afterPath="$PROJECT_DIR$/just/notary/notary_app.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/reclamation/reclamation_app.py" afterPath="$PROJECT_DIR$/just/reclamation/reclamation_app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/templates/court_0717.html" afterPath="$PROJECT_DIR$/just/templates/court_0717.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/templates/court_2601.html" afterPath="$PROJECT_DIR$/just/templates/court_2601.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/templates/index_page.html" afterPath="$PROJECT_DIR$/just/templates/index_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/just/views.py" afterPath="$PROJECT_DIR$/just/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/text.txt" afterPath="$PROJECT_DIR$/uploads/text.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/text_2601.txt" afterPath="$PROJECT_DIR$/uploads/text_2601.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/text_2606.txt" afterPath="$PROJECT_DIR$/uploads/text_2606.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,42 +23,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nice_look.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/court_2601/nice_look.py">
+      <file leaf-file-name="court_2610.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/templates/court_2610.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="607">
+              <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="court_0717.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/court_0717/court_0717.py">
+      <file leaf-file-name="index_page.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/templates/index_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="81" column="72" lean-forward="false" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nice_look.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/court_0717/nice_look.py">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="court_0717.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/templates/court_0717.html">
+      <file leaf-file-name="notary.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/templates/notary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="27" column="36" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reclamation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/templates/reclamation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/just/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,50 +95,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_page.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/templates/index_page.html">
+      <file leaf-file-name="text.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uploads/text.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nice_look.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/court_2606/nice_look.py">
+      <file leaf-file-name="text_2601.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/uploads/text_2601.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/just/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="court_2601.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/just/court_2601/court_2601.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.py">
+      <file leaf-file-name="text_2606.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uploads/text_2606.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -163,8 +150,8 @@
       <find>uppe</find>
       <find>index</find>
       <find>conte</find>
-      <find>2601</find>
       <find>26</find>
+      <find>2601</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,24 +175,24 @@
         <option value="$PROJECT_DIR$/just/court_2610/grab_2610.py" />
         <option value="$PROJECT_DIR$/just/court_2606/court_2606.py" />
         <option value="$PROJECT_DIR$/just/court_2610/court_2610.py" />
-        <option value="$PROJECT_DIR$/just/notary/notary_app.py" />
-        <option value="$PROJECT_DIR$/just/reclamation/reclamation_app.py" />
         <option value="$PROJECT_DIR$/just/court_2606/nice_look.py" />
         <option value="$PROJECT_DIR$/just/templates/court_2601.html" />
-        <option value="$PROJECT_DIR$/uploads/text_2601.txt" />
-        <option value="$PROJECT_DIR$/just/court_2601/nice_look.py" />
         <option value="$PROJECT_DIR$/just/dover/dover_app" />
         <option value="$PROJECT_DIR$/just/court_2610/nice_look.py" />
         <option value="$PROJECT_DIR$/just/dover/fuck_this_shit.py" />
         <option value="$PROJECT_DIR$/just/dover/dover_app.py" />
         <option value="$PROJECT_DIR$/just/dover/poa.py" />
         <option value="$PROJECT_DIR$/just/court_0717/court_0717.py" />
-        <option value="$PROJECT_DIR$/just/court_2601/court_2601.py" />
         <option value="$PROJECT_DIR$/just/court_0717/nice_look.py" />
         <option value="$PROJECT_DIR$/just/templates/court_0717.py" />
         <option value="$PROJECT_DIR$/just/templates/court_0717.html" />
+        <option value="$PROJECT_DIR$/just/court_2601/court_2601.py" />
+        <option value="$PROJECT_DIR$/just/court_2601/nice_look.py" />
+        <option value="$PROJECT_DIR$/just/notary/notary_app.py" />
+        <option value="$PROJECT_DIR$/just/reclamation/reclamation_app.py" />
         <option value="$PROJECT_DIR$/just/templates/index_page.html" />
         <option value="$PROJECT_DIR$/just/views.py" />
+        <option value="$PROJECT_DIR$/uploads/text_2601.txt" />
       </list>
     </option>
   </component>
@@ -301,7 +288,42 @@
               <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
               <item name="just_motor" type="462c0819:PsiDirectoryNode" />
               <item name="just" type="462c0819:PsiDirectoryNode" />
+              <item name="court_2610" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="just" type="462c0819:PsiDirectoryNode" />
+              <item name="dover" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="just" type="462c0819:PsiDirectoryNode" />
+              <item name="notary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="just" type="462c0819:PsiDirectoryNode" />
+              <item name="reclamation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="just" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="just" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="just_motor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="just_motor" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -397,8 +419,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24641676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24641676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928064" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -455,13 +478,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/just/notary/notary_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="117" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/reclamation/colect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -528,27 +544,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parce.py" />
     <entry file="file://$PROJECT_DIR$/just/court_2610/text.txt" />
-    <entry file="file://$PROJECT_DIR$/uploads/text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/reclamation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/notary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/Текстовый документ.txt" />
     <entry file="file://$PROJECT_DIR$/just/court_code.txt" />
     <entry file="file://$PROJECT_DIR$/court_code.txt">
@@ -580,45 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2610/court_2610.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/notary/colect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/reclamation/colect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/reclamation/reclamation_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/court_2606.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="75" lean-forward="false" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/court_2601.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -629,35 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2606/court_2606.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/dover/dover_app" />
-    <entry file="file://$PROJECT_DIR$/uploads/text_2601.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2610/nice_look.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/notary/notary_app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/dover/fuck_this_shit.py" />
     <entry file="file://$PROJECT_DIR$/just/dover/dover_app.py" />
     <entry file="file://$PROJECT_DIR$/just/dover/poa.py">
@@ -665,7 +597,7 @@
         <state relative-caret-position="408">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
             <element signature="e#444#508#0" expanded="false" />
             <element signature="e#541#709#0" expanded="false" />
             <element signature="e#747#1186#0" expanded="false" />
@@ -674,63 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/court_2610.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/just/templates/court_0717.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2606/nice_look.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/templates/index_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="92" lean-forward="true" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_0717/nice_look.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_0717/court_0717.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="81" column="72" lean-forward="false" selection-start-line="81" selection-start-column="72" selection-end-line="81" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/text_0717.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -746,36 +622,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2601/court_2601.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_0717/court_0717.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_0717/nice_look.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2601/nice_look.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2606/court_2606.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2606/nice_look.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2610/court_2610.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="72" column="17" lean-forward="false" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/court_2610/nice_look.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/notary/colect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/notary/notary_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/reclamation/reclamation_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/just/templates/court_0717.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="27" column="36" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="27" selection-end-column="36" />
+        <state relative-caret-position="459">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/court_2601.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/court_2606.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="49" column="75" lean-forward="false" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/court_2610.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/index_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/notary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/just/templates/reclamation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/just/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+        <state relative-caret-position="641">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2601/nice_look.py">
+    <entry file="file://$PROJECT_DIR$/uploads/text_0717.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/just/court_2601/court_2601.py">
+    <entry file="file://$PROJECT_DIR$/uploads/text.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/text_2606.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploads/text_2601.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

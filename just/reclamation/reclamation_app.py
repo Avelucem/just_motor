@@ -54,13 +54,13 @@ def reclamation_app():
             'add_data' : R(add_data)}
 
         doc.render(context)
-<<<<<<< HEAD
+
         doc.save(os.path.abspath("generated/Рекламация № %s.docx" % number_place[i]))
         zf.write(os.path.abspath("generated/Рекламация № %s.docx" % number_place[i]), arcname= 'Рекламация № %s.docx' % number_place[i])
         os.remove(os.path.abspath("generated/Рекламация № %s.docx") % number_place[i])
-=======
+
         doc.save(os.path.abspath("Рекламация № %s.docx" % number_place[i]))
         zf.write(os.path.abspath("Рекламация № %s.docx" % number_place[i]), arcname= 'Рекламация № %s.docx' % number_place[i])
         os.remove(os.path.abspath("Рекламация № %s.docx") % number_place[i])
->>>>>>> 4ace955a46d148ebb627465a6a5d2d5e95be7b65
+
         zf.close()

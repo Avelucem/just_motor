@@ -82,6 +82,6 @@ def main(urls):
 while True:
     if __name__ == "__main__":
         urls = []
-        for links in list(range(int(last_number)+1, int(last_number)+10000)):
+        for links in list(range(int(last_number)+1, int(last_number)+1000000)):
             urls.append('http://court.gov.ua/log_documents/%s/%s/'% (links, court_number))
         main(urls)

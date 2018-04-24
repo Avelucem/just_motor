@@ -9,7 +9,13 @@ from requests import Request, Session
 court_number = 2610
 s = requests.Session()
 f_read = open(os.path.abspath('uploads/text_%s.txt' % court_number), 'r', encoding = 'utf-8')
-last_number = f_read.read().split('\n')[-2].split(';')[0].split('/')[-3]
+fine_number = f_read.read().split('\n')
+a = []
+for x in fine_number:
+    a.append(int(x.split(';')[0].split('/')[-3]))
+
+a.sort()
+last_number = a[-1]
 url_logs = "http://court.gov.ua/logs.php"
 
 class Downloader(threading.Thread):
@@ -69,7 +75,7 @@ class Downloader(threading.Thread):
 def main(urls):
     queue = Queue()
     # Запускаем потом и очередь
-    for i in range(400):
+    for i in range(40):
         t = Downloader(queue)
         t.setDaemon(True)
         t.start()
